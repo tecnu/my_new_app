@@ -1,0 +1,116 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+}
+
+h1,
+h2
+ {
+    text-transform: uppercase;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+p {
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #000;
+}
+
+
+hr {
+    max-width: 400px;
+    border-color: #999999;
+}
+
+
+.brand,
+.address-bar {
+    display: none;
+}
+
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+
+.brand-before {
+    margin: 15px 0;
+}
+
+
+.brand-name {
+    margin: 0;
+    font-size: 4em;
+}
+
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
+}
+
+
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+
+footer {
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+
+footer p {
+    margin: 0;
+    padding: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
