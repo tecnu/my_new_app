@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     
+    <link rel="stylesheet" href="stylesheets/custom_styles.css">
+    
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     
@@ -15,24 +17,15 @@
 
   <body>
       
-    <!-- <div class="brand">The Bake Shop</div>
+    <!--<div class="brand">The Bake Shop</div>
     <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div> -->
+    
+   
     
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <!-- <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed 
-                <a class="navbar-brand">The Bake Shop</a>
-            </div>  -->
             
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -50,6 +43,15 @@
                         <%= link_to 'Contact', "/static_pages/contact" %>
                     </li>
                 </ul>
+                
+                <!-- Form -->
+                <div class="field form-group">
+                    <%= form_tag("/products", method: "get", class: "form-horizontal") do %>
+                        <%= label_tag(:q, "Search for:", class: "col-sm-5 control-label") %> 
+                        <%= text_field_tag(:q) %>
+                        <%= submit_tag("Search") %>
+                    <% end %>
+                </div>
             </div>
             <!-- /.navbar-collapse -->
         </div>
