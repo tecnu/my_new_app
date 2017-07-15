@@ -12,7 +12,8 @@
   </div>
   
   <div class="col-md-4">
-    <p>Phone:
+    
+    <!-- <p>Phone:
       <strong>123.456.7890</strong>
     </p>
     
@@ -23,7 +24,34 @@
     <p>Address:
       <strong>3481 Melrose Place
       <br>San Francisco, CA 90210</strong>
-    </p>
+    </p> -->
+    
+    <h1>Contact Us</h1>
+    <%= flash[:notice] %>
+
+    <%= form_tag("/static_pages/thank_you") do %>
+    <div class="row">
+      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+        <div class="form-group">
+          <%= label_tag :name %>
+          <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name", required: "true"%>
+        </div><!--name-->
+        <div class="form-group">
+          <%= label_tag :email, "Email Address" %>
+          <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email", required: "true", type: "email" %>
+        </div><!--email-->
+        <div class="form-group">
+          <%= label_tag :message %>
+          <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message", required: "true" %>
+
+          <button class="btn">
+          <%= submit_tag "Send" %>
+          </button>
+        <% end %>
+        </div>
+      </div>
+    </div>
+    
   </div>
   
   <div>
