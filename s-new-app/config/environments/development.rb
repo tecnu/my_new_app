@@ -51,4 +51,11 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+  
+  # Devise - So dynamic links in emails from development env generate the right URLS
+  config.action_mailer.default_url_options = { host: 'localhost:8080' }
+  default_url_options
+  
 end
+
+  

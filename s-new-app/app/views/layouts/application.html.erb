@@ -43,6 +43,24 @@
                     <li>
                         <%= link_to 'Contact', "/static_pages/contact" %>
                     </li>
+                    
+                    <!-- Login -->
+                    <li>
+                        <% if user_signed_in? %>
+                        <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+                        <% else %>
+                        <%= link_to('Login', new_user_session_path) %>
+                        <% end %>
+                    </li>
+                    
+                    <!-- Signup -->
+                    <li>    
+                        <% if user_signed_in? %>
+                        <%= link_to 'Edit', edit_user_registration_path %>
+                        <% else %>
+                        <%= link_to('Sign up', new_user_registration_path) %>
+                        <% end %>
+                    </li>
                 </ul>
                 
                 <!-- Form -->
@@ -53,11 +71,20 @@
                         <%= submit_tag("Search") %>
                     <% end %>
                 </div>
+                
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
+    
+    <!-- Flash Notice Tags -->
+    <% if notice %>
+      <div id="notice" class="animated fadeOut alert alert-success" role="alert"><%= notice %><%= alert %></div>
+    <% end %>    
+    <% if alert %>
+      <div id="alert" class="animated fadeOut alert alert-danger" role="alert"><%= notice %><%= alert %></div>
+    <% end %>     
     
     
     <%= yield %>
