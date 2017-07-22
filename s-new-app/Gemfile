@@ -65,3 +65,6 @@ end
 
 # For Devise
 gem 'devise'
+
+# For CanCanCan Authorization
+gem 'cancancan', '~> 1.10'

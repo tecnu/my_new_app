@@ -1,6 +1,10 @@
 body {
   font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  background-color: #D4A190; }
+  background: url("bg5.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;}
 
 h1,
 h2 {
@@ -139,3 +143,10 @@ footer p {
 
 .img-contact {
   width: 90%; }
+  
+
+.carousel-image {
+    max-height: 550px;
+    width: auto;
+    margin: auto;
+}
