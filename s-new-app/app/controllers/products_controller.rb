@@ -19,6 +19,12 @@ class ProductsController < ApplicationController
     @comments = @product.comments.order("created_at DESC")
   end
 
+  #Paginate
+  def index
+    @products = Product.all.paginate(page: params[:page], per_page: 3)
+  end
+
+
   # GET /products/new
   def new
     @product = Product.new
