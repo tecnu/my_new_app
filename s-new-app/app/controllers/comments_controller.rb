@@ -26,6 +26,7 @@ class CommentsController < ApplicationController
     redirect_to product
   end
   
+  
   private
 
   def comment_params
