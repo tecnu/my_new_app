@@ -88,7 +88,7 @@ footer p {
     }}
     
 
-/* .address-bar {
+.address-bar {
         display: inherit;
         margin: 0;
         padding: 0 0 40px;
@@ -99,10 +99,10 @@ footer p {
         font-weight: 400;
         letter-spacing: 3px;
         color: #fff;
-    } */
+    } 
     
-/* .navbar {
-        border-radius: 0; } */
+.navbar {
+        border-radius: 0; } 
 
 .navbar-header {
   display: none; } 
@@ -112,10 +112,10 @@ footer p {
   min-height: 0; }
 
 
-/* .navbar-default {
+.navbar-default {
         border: none;
         background: #fff;
-        background: rgba(255,255,255,0.9); } */
+        background: rgba(255,255,255,0.9); } 
         
 
 .nav>li>a {
@@ -155,4 +155,14 @@ footer p {
 .comment {
   background-color: #fbf7f7;
   margin-top: 35px;
+}
+
+.search {
+  display: inline-block;
+  text-align: center;
+  padding-left: 375px;
+}
+
+.comments {
+  width: 30%;
 }

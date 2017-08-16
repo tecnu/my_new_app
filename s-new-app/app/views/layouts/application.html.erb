@@ -16,11 +16,9 @@
   
   <body>
       
-    <!--<div class="brand">The Bake Shop</div>
-    <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div> -->
+   <div class="brand">The Bake Shop</div>
     
-   
-    
+
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
@@ -30,16 +28,16 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <%= link_to 'Home', "/static_pages/index" %>
+                        <%= link_to 'Home', root_path %>
                     </li>
                     <li>
-                        <%= link_to 'About', "/static_pages/about" %>
+                        <%= link_to 'About', static_pages_about_path %>
                     </li>
                     <li>
-                        <%= link_to 'Products', "/products" %>
+                        <%= link_to 'Products', products_path %>
                     </li> 
                     <li>
-                        <%= link_to 'Contact', "/static_pages/contact" %>
+                        <%= link_to 'Contact', static_pages_contact_path %>
                     </li>
                     
                     <!-- Login -->
@@ -63,10 +61,10 @@
                 
                 <!-- Form -->
                 <div class="field form-group">
-                    <%= form_tag("/products", method: "get", class: "form-horizontal") do %>
-                        <%= label_tag(:q, "Search for:", class: "col-sm-5 control-label") %> 
-                        <%= text_field_tag(:q) %>
-                        <%= submit_tag("Search") %>
+                    <%= form_tag("/products", method: "get", :class => "navbar-form") do %>
+                        <%= label_tag(:q, "Search for:", :class => "search") %> 
+                        <%= text_field_tag(:q, nil, :class => "form-control")%>
+                        <%= submit_tag("Search", :class => "btn btn-default") %>
                     <% end %>
                 </div>
                 
