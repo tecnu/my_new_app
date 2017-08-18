@@ -5,7 +5,8 @@ class Product < ApplicationRecord
 
 
 def self.search(search_term)
-  Product.where("name like ?", "%#{search_term}%")
+    like_operator = Rails.env.production? ? 'ilike' : 'like'
+    Product.where("name #{like_operator} ?", "%#{search_term}%")
 end
 
 def highest_rating_comment

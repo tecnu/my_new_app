@@ -23,7 +23,7 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  #config.assets.compile = false
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
@@ -86,8 +86,6 @@ Rails.application.configure do
   
   # Added to correct missing background image on app pages in production
   config.serve_static_files = true
- 
+  config.assets.compile = true
   
-  # Added to correct missing "The Bake Shop" at the top of pages
-  config.assets.digest = true
 end
