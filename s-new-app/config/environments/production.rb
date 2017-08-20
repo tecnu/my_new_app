@@ -88,4 +88,6 @@ Rails.application.configure do
   config.serve_static_files = true
   config.assets.compile = true
   
+  # Added to correct missing "The Bake Shop" at the top of pages - CSS display property issue
+  config.assets.digest = true
 end
