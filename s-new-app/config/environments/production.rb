@@ -90,4 +90,5 @@ Rails.application.configure do
   
   # Added to correct missing "The Bake Shop" at the top of pages - CSS display property issue
   #config.assets.digest = true
+  
 end
