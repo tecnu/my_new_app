@@ -24,9 +24,9 @@ hr {
   border-color: #000; }
   
 
-.brand,
+/* .brand,
 .address-bar {
-  display: inherit; }
+  display:none; } */
   
 
 .navbar-nav {
