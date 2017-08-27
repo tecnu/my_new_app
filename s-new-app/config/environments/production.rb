@@ -92,6 +92,6 @@ Rails.application.configure do
   config.assets.digest = true
   
   # Added to correct elevateZoom js plugin not showing in Heroku
-  #config.serve_static_assets = true
+  config.serve_static_assets = true
   
 end
