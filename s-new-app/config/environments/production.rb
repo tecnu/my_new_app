@@ -91,4 +91,7 @@ Rails.application.configure do
   # Added to correct missing "The Bake Shop" at the top of pages - CSS display property issue
   config.assets.digest = true
   
+  # Added to correct elevateZoom js plugin not showing in Heroku
+  config.serve_static_assets = true
+  
 end
