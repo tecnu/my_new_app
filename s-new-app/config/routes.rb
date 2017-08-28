@@ -19,6 +19,10 @@ Rails.application.routes.draw do
   
   post 'static_pages/thank_you'
   
+  post 'payments/create'
+  
+  get 'static_pages/payment_thanks'
+  
   
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

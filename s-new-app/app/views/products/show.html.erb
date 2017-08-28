@@ -41,9 +41,10 @@
   
   
     <div style="margin-left:30px; margin-bottom:10px;">
-        <%= form_tag(url: '/payments/create') do |form| %>
-          <%= render partial: "shared/stripe_checkout_button" %>
-        <% end %>
+      <%= form_tag('/payments/create') do |form| %>
+        <%= hidden_field_tag(:product_id, @product.id) %>
+        <%= render partial: "shared/stripe_checkout_button" %>
+      <% end %>
     </div>
 
     </div>
