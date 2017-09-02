@@ -86,3 +86,6 @@ gem 'stripe'
 
 # Brakeman Security Scanner
 gem "brakeman", :require => false
+
+# Memcache Client
+gem 'dalli'
