@@ -89,3 +89,7 @@ gem "brakeman", :require => false
 
 # Memcache Client
 gem 'dalli'
+
+# Redis gem
+gem 'redis-rails'
+
