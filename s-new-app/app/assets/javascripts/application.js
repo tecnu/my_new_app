@@ -13,5 +13,4 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
-//= require jquery.elevateZoom-3.0.8.min.js
 //= require turbolinks
