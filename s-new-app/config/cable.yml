@@ -5,9 +5,7 @@ test:
   adapter: async
 
 production:
-  adapter: postgresql
-  url: //pfxfkxpxlhwdoi:d637c6d17b1120ebfc11344bcf8c00012b72a992b949eff18c755c4d4f33069f@ec2-54-225-68-71.compute-1.amazonaws.com:54
-  
-  
-  
+  adapter: redis
+  url:  redis://redistogo:0a0306ba78e2ebe35b02415b6a03e4c2@cobia.redistogo.com:9027/
+
   

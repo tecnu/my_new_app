@@ -105,8 +105,8 @@ Rails.application.configure do
                      :down_retry_delay => 60
                     }
  
- # Allow ActionCable requests on production 
- config.action_cable.url = "wss://thebakeshop2017.herokuapp.com/cable"
- config.action_cable.allowed_request_origins = ['https://thebakeshop2017.herokuapp.com', 'http://thebakeshop2017.herokuapp.com']
+  # ActionCable setup for Heroku 
+  config.web_socket_server_url = "wss://thebakeshop2017.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://thebakeshop2017.herokuapp.com', 'http://thebakeshop2017.herokuapp.com']
  
 end
