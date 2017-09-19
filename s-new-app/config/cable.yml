@@ -6,6 +6,6 @@ test:
 
 production:
   adapter: redis
-  url:  redis://redistogo:0a0306ba78e2ebe35b02415b6a03e4c2@cobia.redistogo.com:9027/
+  url: redis://redistogo:0a0306ba78e2ebe35b02415b6a03e4c2@cobia.redistogo.com:9027/
 
   
